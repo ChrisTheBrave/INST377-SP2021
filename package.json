@@ -10,7 +10,7 @@
     "start": "nodemon --ignore public server.js"
   },
   "engines": {
-    "node": "13.x"
+    "node": "^14"
   },
   "author": "Alex Leitch",
   "license": "ISC",
