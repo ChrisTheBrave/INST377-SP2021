@@ -47,6 +47,7 @@ document.addEventListener('DOMContentLoaded', () => {
         topObstacle.style.left = obstacleLeft + 'px'
         obstacle.style.bottom = obstacleBottom + 'px'
         topObstacle.style.bottom = obstacleBottom + gap + 'px'
+        // groundSurface.style.top
 
         function moveObstacle() {
             obstacleLeft -= 2
@@ -61,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (
                 obstacleLeft > 200 && obstacleLeft < 280 && birdLeft === 220 &&
                 (birdBottom < obstacleBottom + 153 || birdBottom > obstacleBottom + gap -200) || 
-                (birdBottom > ground + 150) ||
+                (birdBottom === ground + 150) ||
                 birdBottom === 0
                 ) {
                 gameOver()
