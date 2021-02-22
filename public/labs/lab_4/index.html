@@ -3,33 +3,33 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Lab 4</title>
+        <title name="Chris Ash">"Chris Ash, Lab 4"</title>
         <link rel="stylesheet" href="styles.css">
         <script src="script.js" charset="utf-8"></script>
     </head>
     <body>
         <h1>Chris Ash Lab 4</h1>
-        <form>
+        <form action="/api" method="post">
             <ul class="flex-outer">
                 <li>
-                    <label for="first-name">First Name</label>
-                    <input type="text" id="first-name">
+                    <label for="fname">First Name</label>
+                    <input type="text" name="first-name" id="fname">
                 </li>
                 <li>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" id="last-name">
+                    <label for="lname">Last Name</label>
+                    <input type="text" name="last-name" id="lname">
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email">
+                    <input type="email" name="email" id="email">
                 </li>
                 <li>
                     <label for="phone">Phone</label>
-                    <input type="tel" id="phone">
+                    <input type="tel" name="phone" id="phone">
                 </li>
                 <li>
-                    <label for="text-field">Text Field</label>
-                    <textarea rows="6" id="textarea" placeholder="This is some default message text."></textarea>
+                    <label for="textarea">Text Field</label>
+                    <textarea name="message" rows="5" cols="33" id="textarea" placeholder="This is some default message text."></textarea>
                 </li>
                 <li>
                     <p>Age</p>
@@ -48,7 +48,7 @@
                         </li>
                     </ul>
                 <li>
-                    <button type="submit">Submit Form</button>
+                    <button name="submit-button" type="submit" id="submit">Submit Form</button>
                 </li>
             </ul>
         </form>
