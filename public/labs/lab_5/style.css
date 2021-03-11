@@ -10,12 +10,12 @@ html{
     
 }
 
-.list-item {
+/* .list-item {
     display: block;
     margin-bottom: 20px;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     color: white;
-}
+} */
 
 
 h1{
@@ -41,36 +41,38 @@ h2{
     margin-top: 20px;
 } */
 
-.userform{
+/* .userform{
     margin-top: 20px;
     display: flex;
-}
+} */
 
-div#mapcontent\ column {
+/* div#mapcontent\ column {
     width: 42%;
     margin-top: 42px;
-}
+} */
 
 #mapid { 
     height: 400px; 
 }
-
-input#search.city.zip.is-normal{
+.card {
+    background-color: cornflowerblue;
+}
+/* input#search.city.zip.is-normal{
     height: 40px;
     width: 456;
     margin-bottom: 10px;
-}
+} */
 
-ul#suggestions.suggestions.card-content.is-centered {
+/* ul#suggestions.suggestions.card-content.is-centered {
     background-color: darkgoldenrod;
-}
+} */
 
-form.search-form.column.is-half p {
+form.search-form.column p {
     margin-bottom: 35px;
     font-size: larger;
 }
 
-form.search-form.column.is-half label {
+form.search-form.column label{
     font-weight: bolder;
     color: black;
 }
