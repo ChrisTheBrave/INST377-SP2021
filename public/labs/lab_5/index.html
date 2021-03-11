@@ -14,25 +14,20 @@
    crossorigin=""></script>
 </head>
 <body>
-    <div class="userform">
-        <form class="search-form column is-half" action='/api' method='post'>
-            <h1>Chris Ash Lab 5</h1>
+    <div class="userform columns">
+        <form class="search-form column" action='/api' method='post'>
+            <h1 class=>Chris Ash Lab 5</h1>
             <p>Zip Code Food Search</p>
-
-            <label for="search">Search</label>
-            <input type="text" class="city zip is-normal" id="search" name="search" placeholder="Zip">
-            <!-- <div class="column is-half is-centered"> -->
+    
+            <label class="label" for="search">Search</label>
+            <input type="text" class="input" name="search" id="search" placeholder="zip">
             <div class="card">
                 <ul class="suggestions card-content is-centered" id="suggestions"></ul>
-                <!-- </div> -->
             </div>
-            <button type="submit" name="submit" id="submit">Submit</button>
+            <button type="submit" name="submit" id="submit" class="button">Submit</button>
         </form>
-    <div id="mapcontent column">
-            <div id="mapid">A MAP</div>
-        </div>
+        <div id="mapid" class="leaflet-container column"></div>
     </div>
-    
 </body>
 <script src="script.js"></script>
 </html>
