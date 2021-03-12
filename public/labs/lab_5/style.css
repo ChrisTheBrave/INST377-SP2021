@@ -32,26 +32,6 @@ h2{
     font-size: large;
 }
 
-/* #mapcontent {
-    display: flex;
-} */
-
-
-
-/* .search-form{
-    margin-top: 20px;
-} */
-
-/* .userform{
-    margin-top: 20px;
-    display: flex;
-} */
-
-/* div#mapcontent\ column {
-    width: 42%;
-    margin-top: 42px;
-} */
-
 #mapid { 
     height: 400px; 
     margin-top: 43px;
@@ -66,9 +46,3 @@ label.label {
     font-weight: bolder;
     color: black;
 }
-
-/* div.column.is-half.is-centered {
-    flex: none;
-    width: 50%;
-    margin-left: 240;
-} */
