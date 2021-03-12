@@ -54,19 +54,8 @@ h2{
 
 #mapid { 
     height: 400px; 
+    margin-top: 43px;
 }
-/* .card {
-    background-color: cornflowerblue;
-} */
-/* input#search.city.zip.is-normal{
-    height: 40px;
-    width: 456;
-    margin-bottom: 10px;
-} */
-
-/* ul#suggestions.suggestions.card-content.is-centered {
-    background-color: darkgoldenrod;
-} */
 
 form.search-form.column p {
     margin-bottom: 35px;
