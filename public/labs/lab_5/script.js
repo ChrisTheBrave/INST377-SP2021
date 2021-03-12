@@ -16,8 +16,6 @@ function mapInit() {
 }
 
 async function dataHandler(mapObjectFromFunction) {
-//   // use your assignment 1 data handling code here
-//   // and target mapObjectFromFunction to attach markers
   const form = document.querySelector('.userform');
   const search = document.querySelector('#search');
   const replyMessage = document.querySelector('.reply-message');

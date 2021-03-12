@@ -10,12 +10,13 @@ html{
     
 }
 
-/* .list-item {
+.list-item {
     display: block;
     margin-bottom: 20px;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    color: white;
-} */
+    background-color: rgb(42, 209, 139);
+    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
+    color: black;
+}
 
 
 h1{
@@ -54,9 +55,9 @@ h2{
 #mapid { 
     height: 400px; 
 }
-.card {
+/* .card {
     background-color: cornflowerblue;
-}
+} */
 /* input#search.city.zip.is-normal{
     height: 40px;
     width: 456;
