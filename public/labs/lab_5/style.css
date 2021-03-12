@@ -1,7 +1,6 @@
 body{
     background-color: white;
     width: 960px;
-    /* text-align: center; */
     margin: 0px;
 }
 
@@ -14,13 +13,11 @@ html{
     display: block;
     margin-bottom: 20px;
     background-color: rgb(42, 209, 139);
-    /* background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
     color: black;
 }
 
 
 h1{
-    /* font-family: 'Big Shoulders Display', cursive; */
     color: #2a2a2a;
     font-size: xx-large;
     font-weight: bold;
