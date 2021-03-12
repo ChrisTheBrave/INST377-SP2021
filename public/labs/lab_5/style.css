@@ -72,7 +72,7 @@ form.search-form.column p {
     font-size: larger;
 }
 
-form.search-form.column label{
+label.label {
     font-weight: bolder;
     color: black;
 }
