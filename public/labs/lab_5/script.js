@@ -9,9 +9,6 @@ function mapInit() {
     zoomOffset: -1,
     accessToken: 'pk.eyJ1IjoiY2FzaDExIiwiYSI6ImNrbTU2cTRnMDBicmoydnA1cjVoNzkyZDMifQ.J7-dgOlyC6lr_l9ILikSmQ'
   }).addTo(mymap);
-
-  console.log('mymap', mymap);
-
   return mymap;
 }
 
@@ -23,13 +20,11 @@ async function dataHandler(mapObjectFromFunction) {
 
   const request = await fetch('/api');
   const data = await request.json();
-  // console.table(data);
 
   form.addEventListener('submit', async (event) => {
     suggestions.innerText = '';
 
     event.preventDefault();
-    console.log('submit fired', search.value);
     // eslint-disable-next-line max-len
     const filtered = data.filter((record) => record.zip.includes(search.value) && record.geocoded_column_1);
     const topFive = filtered.slice(0, 5);
@@ -38,11 +33,8 @@ async function dataHandler(mapObjectFromFunction) {
       replyMessage.classList.add('box');
       replyMessage.innerText = 'No matches found';
     } else {
-      console.table(topFive);
-
       topFive.forEach((item) => {
         const longLat = item.geocoded_column_1.coordinates;
-        console.log('markerLongLat', longLat[0], longLat[1]);
         const marker = L.marker([longLat[1], longLat[0]]).addTo(mapObjectFromFunction);
 
         const appendItem = document.createElement('li');
@@ -53,12 +45,10 @@ async function dataHandler(mapObjectFromFunction) {
       });
 
       const {coordinates} = topFive[0]?.geocoded_column_1;
-      console.log('viewSet coords', coordinates);
       mapObjectFromFunction.panTo([coordinates[1], coordinates[0]], 0);
     }
   });
   search.addEventListener('input', (event) => {
-    console.log('input', (event.target.value));
     if (search.value.length === 0) {
       replyMessage.innerText = '';
       replyMessage.classList.remove('box');
