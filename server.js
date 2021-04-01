@@ -48,9 +48,6 @@ app.route('/api')
     console.log('Now send something back to your client');
     const data = await fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json');
     const json = await data.json();
-<<<<<<< HEAD
-    console.log('data from fetch', json);
-=======
 
     fetch('https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json')
       .then((data) => data.json())
@@ -59,7 +56,6 @@ app.route('/api')
       })
       .catch((err) => console.error(err));
 
->>>>>>> 2f32180bc86c4d14d3ea20425f11337f9849cc51
     res.json({data: json});
   });
 
